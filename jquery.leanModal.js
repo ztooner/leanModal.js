@@ -63,7 +63,7 @@
 
         		$("#lean_overlay").fadeOut(200);
 
-        		$(modal_id).css({ 'display' : 'none' });
+        		$(modal_id).css({ 'display' : 'none' }).trigger('leanmodal:closed');
 			
 			}
     
