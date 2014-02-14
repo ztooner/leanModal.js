@@ -51,7 +51,9 @@
         		
         		});
 
-        		$(modal_id).fadeTo(200,1);
+        		$(modal_id).fadeTo(200,1, function() {
+                        	$(this).trigger('leanmodal:opened');
+                    	});
 
                 e.preventDefault();
                 		
